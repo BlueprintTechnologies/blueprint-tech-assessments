@@ -1,5 +1,7 @@
 # Apache Spark Assessment 1
-This Blueprint assessment is used to evaluate your comfort with Apache Spark. To submit your answers, create a pull request to this repo with changes to this file that include the answers to the questions below. 
+This Blueprint assessment is used to evaluate your comfort with Apache Spark. To submit your answers, create a pull request to this repo with changes to this file that include the answers to the questions below.
+
+For questions about this assessment, submit an [Issue](https://github.com/BlueprintTechnologies/blueprint-tech-assessments/issues). 
 
 
 ### Q1. In your own words, describe the architecture of Apache Spark?
