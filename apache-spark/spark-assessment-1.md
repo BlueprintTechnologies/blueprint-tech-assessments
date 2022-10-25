@@ -1,20 +1,14 @@
 # Apache Spark Assessment 1
-This Blueprint assessment is used to evaluate your comfort with Apache Spark. To submit your answers, create a pull request to this repo with changes to this file that include the answers to the questions below.
+This Blueprint assessment is used to evaluate your comfort with Apache Spark. To submit your answer(s), create a pull request to this repo with changes to this file that include the answers to the question(s) below.
 
 For questions about this assessment, submit an [Issue](https://github.com/BlueprintTechnologies/blueprint-tech-assessments/issues). 
 
 
-### Q1. In your own words, describe the architecture of Apache Spark?
+## Essay Question
+In 200 words **or more**, describe the architecture of Apache Spark.
 
 [Replace with your answer here]
 
-### Q2. What are the types of cluster managers in Apache Spark?
-
-[Replace with your answer here]
-
-### 03. What's shuffle in Apache Spark? Give example of an operation in Apache Spark that involves shuffle.
-
-[Replace with your answer here]
 
 ## Coding Example
 As part of your pull request to this repo, include a jupyter notebook that includes your custom code that demonstrates Apache Spark usage across all six parts below.
