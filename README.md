@@ -13,3 +13,10 @@ Your assessment coordinator will send you a link to a specific assessment. Unles
 To submit your answers to the assigned assessment, you will create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) in this repository. Your pull request should contain the answers to all the questions and challenges in the assigned assessment (unless otherwise specified).
 
 If you have questions about the assessment, submit an [Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues) to this repository.
+
+## FAQ
+
+### Q. When trying to push my code, I get the following error: 
+`fatal: unable to access 'https://github.com/BlueprintTechnologies/blueprint-tech-assessments.git/': The requested URL returned error: 403`
+
+A. This issue often arises when you have two-factor authentication (2FA) enabled on your Github account and use your password to authenticate. When 2FA is enabled, you must use a personal access token instead of your password. More information on creating a personal access token in Github available at https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.  
