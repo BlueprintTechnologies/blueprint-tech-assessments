@@ -1,0 +1,18 @@
+Apache Spark is an open source cluster computing framework for real-time data processing. The main feature of Apache Spark is its in-memory cluster computing that increases the processing speed of an application.
+
+Apache Spark is designed on two main abstractions:
+
+Resilient Distributed Dataset (RDD): RDD is an immutable, fundamental collection of elements that can be operated on many devices at the same time.
+Directed Acyclic Graph (DAG): DAG is the scheduling layer that implements stage-oriented scheduling. Compared to MapReduce that creates a graph in two stages, Map and Reduce, Apache Spark can create DAGs that contain many stages.
+Architecture of Apache Spark:
+
+Spark follows master/slave architecture where the master is the driver and slaves are the workers. It is a cluster system consists of a master and multiple slaves.
+
+In the master node of a cluster, we have the driver program that schedules the execution of jobs and manages the resources with the cluster manager. Whenever we initialize Spark or perform spark-submit on a cluster, Spark Context will be created by the driver program inside the master node. SparkContext is the main entry point into the Spark functionality.
+
+Spark driver program splits the large input data into small chunks of data (Usually sizes are 64MB, 128MB, or 256MB) and distributes it across the multiple worker nodes to perform a task on that data.
+
+A job is split into multiple tasks by the SparkContext which are distributed over to worker nodes. Tasks are then executed by the individual worker nodes and controlled by the driver program through SparkContext on the master node.
+The job of the worker nodes is to execute these tasks and report the status of each task to the driver. The number of tasks at a time will be equal to the number of partitions.
+
+SparkContext works with the cluster manager to manage various jobs. The cluster manager allocates resources to the worker nodes, where the tasks are executed. Spark cluster manager can use standalone cluster manager or Apache Mesos or Hadoop YARN or Kubernetes for allocating resources.
