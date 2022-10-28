@@ -16,4 +16,4 @@ In this challenge, you will demonstrate using Apache Spark to validate/invalidat
 
 1. Using the test_rules.json in this folder as a guide, create a .tsv data file that contains three columns: name, birthdate, and age. There should be at least 20 rows in the .tsv data file. At least 25% of these records should have invalid data. The .tsv should have a header.
 2. Using Apache Spark, write the valid rows in one file. A row is considered valid if all columns within it are valid according to the rules defined in the rules file. 
-3. Using Apache Spark, write the invalid data in another file. For the invalid data, in a dedicated column, store information about all the fields which were invalid
+3. Using Apache Spark, write the invalid data in another file. For the invalid data, in a dedicated column, store information about all the fields which were invalid 
