@@ -35,7 +35,7 @@ Valid_records_df =  spark.sql (""" SELECT
 								   valid_time_format = 'True' """)
 
 #Writing valid records to one file i.e..valid_records.tsv 								   
-Valid_records_df.write..csv("valid_records.tsv").option("header", "true").option("delimiter", "\t") 
+Valid_records_df.write.csv("valid_records.tsv").option("header", "true").option("delimiter", "\t") 
 
 #Below is the output of valid records
 #Valid_records_df.show(truncate=False)
@@ -87,7 +87,7 @@ Invalid_records_df =  spark.sql (""" SELECT
 								     valid_time_format = 'False' """)
 
 #Writing Invalid records to one file i.e..valid_records.tsv 								   
-Invalid_records_df.write..csv("Invalid_records.tsv").option("header", "true").option("delimiter", "\t")
+Invalid_records_df.write.csv("Invalid_records.tsv").option("header", "true").option("delimiter", "\t")
 
 #Below is the output of Invalid records
 #Invalid_records_df.show(truncate=False)
