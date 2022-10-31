@@ -1,0 +1,13 @@
+Apache Spark is a popular framework for data analytics. Its capabilities include SQL-based analytics, dataflow processing, graph analytics and a rich library of built-in machine learning algorithms. These libraries can be combined to address a wide range of requirements for large-scale data analytics.
+
+To address Fast Data flows, Spark offers two API's: The mature Spark Streaming and its younger sibling, Structured Streaming. 
+
+Spark Streaming
+Spark Streaming is a separate library in Spark to process continuously flowing streaming data. It provides us the DStream API which is powered by Spark RDDs. DStreams provide us data divided in chunks as RDDs received from the source of Streaming to be processed and after processing sends it to the destination.
+
+Structured Streaming
+Spark 2.x release onwards, Structured Streaming came into the picture. Built on Spark SQL library, Structures Streaming is another way to handle streaming with Spark. This model of streaming is based on Dataframe and Dataset APIs. Hence with this library, we can easily apply any SQL query (using DataFrame API) on streaming data.
+
+Spark streaming works on something which we call a micro batch. The stream pipeline is registered with some operations and the Spark polls the source after every batch duration (defined in the application) and then a batch is created of the received data. i.e. each incoming record belongs to a batch of DStream. Each batch represents an RDD.
+
+Whereas, Structured Streaming works on the same architecture of polling the data after some duration, based on your trigger interval but it has some distinction from the Spark Streaming which makes it more inclined towards real streaming. In Structured streaming, there is no concept of a batch. The received data in a trigger is appended to the continuously flowing data stream. Each row of the data stream is processed and the result is updated into the unbounded result table. How you want your result (updated, new result only or all the results) depends on the mode of your operations (Complete, Update, Append).
