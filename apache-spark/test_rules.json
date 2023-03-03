@@ -1,0 +1,24 @@
+{
+	"owner": "John Doe",
+	"lastModifiedDate": "20220505",
+	"schema": {
+		"restrictions": {
+			"0": {
+				"columnName": "name",
+				"type": "string",
+				"min": 5,
+				"max": 100}
+			,
+			"1": {
+				"columnName": "birthdate",
+				"type": "datetime",
+				"format": "YYYYMMDD_hh:mm:ss"
+			},
+			"2": {
+				"columnName": "age",
+				"type": "integer",
+				"min":0,
+				"max":200}
+		}
+	}
+}
